@@ -15,13 +15,13 @@ const contact = () => {
   return (
     <div className='main-contact-container'>
         <div className='contact-text-container'>
-            <h1 className='purple-heading'>LET'S</h1>
+            <h1 className='purple-heading'>LET&apos;S</h1>
             <h1 className='grey-heading'>CONNECT!</h1> 
         </div>
         <div className='contact-container'>
             <div className='contact-text'>
-                <h3 className='contact-heading'  data-aos="zoom-in-up">DON'T BE SHY!</h3>
-                <p className='contact-des' data-aos="zoom-in-up" data-aos-duration="1000">Feel free to reach out! I'm always open to discussing new projects, creative ideas, or opportunities to bring your vision to life.</p>
+                <h3 className='contact-heading'  data-aos="zoom-in-up">DON&apos;T BE SHY!</h3>
+                <p className='contact-des' data-aos="zoom-in-up" data-aos-duration="1000">Feel free to reach out! I&apos;m always open to discussing new projects, creative ideas, or opportunities to bring your vision to life.</p>
 
                <div data-aos="zoom-in-up" data-aos-duration="1500">
                <div> 

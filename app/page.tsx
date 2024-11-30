@@ -18,7 +18,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS CSS
 import { useEffect } from 'react';
 
-function page() {
+function Page() {
   useEffect(() => {
     AOS.init({
       duration: 800, 
@@ -43,7 +43,7 @@ function page() {
         </div>
 
         <div className='text-main-container'  data-aos="zoom-in">
-          <h1 className='heading-purple'>I'M SYEDA BARHA.</h1>
+          <h1 className='heading-purple'>I&apos;M SYEDA BARHA.</h1>
           <h1 className='heading-grey'>A FRONTEND DEVELOPER</h1>
           <p>
 I am a passionate Front-End Web Developer with a keen interest in creating seamless and user-friendly websites. I strive to deliver visually appealing and functional web experiences. I am dedicated to helping others by building intuitive websites that enhance user interaction. 
@@ -64,4 +64,4 @@ I am a passionate Front-End Web Developer with a keen interest in creating seaml
   )
 }
 
-export default page
+export default Page
