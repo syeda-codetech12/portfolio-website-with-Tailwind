@@ -5,50 +5,96 @@ import Image from 'next/image'
 import image1 from '../../images/web-design.png'
 import image2 from '../../images/badge.png'
 import image3 from '../../images/responsive.png'
+import image4 from '../../images/maintenance.png'
+import image5 from '../../images/creativity.png'
+import image6 from '../../images/web.png'
+
+import '../../app/styles/services.css'
+
+
 
 const services = () => {
    
   return (
-    <div className='relative top-24 left-10'>
-        <div  className='flex flex-row w-full justify-center gap-2 font-extrabold text-6xl'>
-            <h1 className='text-gray-600'>MY</h1>
-            <h1 className='text-purple-800'>SERVICES.</h1>
+    <div className='main-services-container'>
+        <div  className='text-container'>
+            <h1 className='grey-heading'>MY</h1>
+            <h1 className='purple-heading'>SERVICES.</h1>
         </div>
-        <div className=' flex gap-8 relative top-10 align-center justify-center '>
+        <div className=' services-container '>
 
-            <div className='w-[300px] h-[350px] border-2 border-purple-800 shadow-lg shadow-gray-600' data-aos="fade-right" data-aos-duration="2000">
-               <div className='p-9 flex flex-col gap-4'> <Image
+<div className='container1'>
+            <div className='container' data-aos="fade-right" data-aos-duration="2000">
+               <div className='inner-content'> <Image
                 src={image1}
                 alt=''
                 width={90}
                 height={90}/>
                 
-                <h2 className='text-2xl text-gray-600 font-medium'>UI / UX DESIGN</h2>
-                <p className='text-[16px] text-gray-700 font-normal'>Lorem ipsum amet consectetur adipisicing elit. Voluptas, porro rerum  recusandae nisi. </p> </div>
+                <h2 className='service'>UI / UX DESIGN</h2>
+                <p className='des'>Lorem ipsum amet consectetur adipisicing elit. Voluptas, porro rerum  recusandae nisi. </p> </div>
             </div>
-            <div className='w-[300px] h-[350px] border-2 border-purple-800 shadow-lg shadow-gray-600' data-aos="fade-up"
+            <div className='container' data-aos="fade-up"
      data-aos-duration="2000">
-         <div className='p-9 flex flex-col gap-4'> <Image
+         <div className='inner-content'> <Image
                 src={image2}
                 alt=''
                 width={90}
                 height={90}/>
                 
-                <h2 className='text-2xl text-gray-600 font-medium'>BRANDING & IDENTITY</h2>
-                <p className='text-[16px] text-gray-700 font-normal'>  dolor sit amet consectetur adipisicing elit. Voluptas, porro rerum numquam nisi. </p> </div>
+                <h2 className='service'>BRANDING & IDENTITY</h2>
+                <p className='des'>  dolor sit amet consectetur adipisicing elit. Voluptas, porro rerum numquam. </p> </div>
      </div>
-            <div className='w-[300px] h-[350px] border-2 border-purple-800 shadow-lg shadow-gray-600' data-aos="fade-left" data-aos-duration="2000" >
-            <div className='p-9 flex flex-col gap-4'> <Image
+            <div className='container' data-aos="fade-left" data-aos-duration="2000" >
+            <div className='inner-content'> <Image
                 src={image3}
                 alt=''
                 width={90}
                 height={90}/>
                 
-                <h2 className='text-2xl text-gray-600 font-medium'>FULLY RESPONSIVE</h2>
-                <p className='text-[16px] text-gray-700 font-normal'>   amet consectetur adipisicing elit. Voluptas, porro rerum numquam recusandae nisi. </p> </div>
+                <h2 className='service'>FULLY RESPONSIVE</h2>
+                <p className='des'>   amet consectetur adipisicing elit. Voluptas, porro rerum nisi. </p> </div>
+            </div>
             </div>
 
+            
+<div className='container2'>
+            <div className='container' data-aos="fade-right" data-aos-duration="2000">
+               <div className='inner-content'> <Image
+                src={image4}
+                alt=''
+                width={90}
+                height={90}/>
+                
+                <h2 className='service'>Maintenance & Support</h2>
+                <p className='des'>ipsum consectetur adipisicing elit. Voluptas, porro rerum  recusandae. </p> </div>
+            </div>
+            <div className='container' data-aos="fade-up"
+     data-aos-duration="2000">
+         <div className='inner-content'> <Image
+                src={image5}
+                alt=''
+                width={90}
+                height={90}/>
+                
+                <h2 className='service'>Creative Design</h2>
+                <p className='des'>  dolor sit amet consectetur adipisicing elit. Voluptas, porro rerum numquam nisi. </p> </div>
+     </div>
+            <div className='container' data-aos="fade-left" data-aos-duration="2000" >
+            <div className='inner-content'> <Image
+                src={image6}
+                alt=''
+                width={90}
+                height={90}/>
+                
+                <h2 className='service'>Conversation Optimization</h2>
+                <p className='des'>   adipisicing elit, Voluptas, porro rerum numquam recusandae nisi. </p> </div>
+            </div>
+            </div>
         </div>
+
+
+        
     </div>
   )
 }

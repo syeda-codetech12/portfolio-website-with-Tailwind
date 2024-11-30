@@ -30,7 +30,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
 
-        <div className="flex flex-row-reverse">
+        <div className="flex lg:flex-row-reverse">
         <Navbar />
 
         <main className="flex-1">

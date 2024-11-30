@@ -1,0 +1,131 @@
+ .navbar{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    justify-content: center;
+    align-items: end;
+}
+
+
+.menu-icon-div{
+    display: none;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.main-nav-div{
+    position: fixed;
+    height: max-content;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-right: 25px;
+    padding: 16px;
+
+} 
+
+
+.icons-text{
+    display: none;
+}
+
+.icon-div{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.active-icon{
+    color:white;
+    background-color: #4e148c;
+}
+
+.inactive-icon{
+    color: #6c757d;
+    background-color: #e9ecef;
+}
+
+.icons-text{
+    display: none;
+}
+
+@media (max-width: 770px) {
+    .menu-icon-div {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        width: 30px;
+        border-radius: 3px;
+        background-color: #363b3f;
+        z-index: 999;
+
+    }
+
+    .menu-icon {
+        display: block;
+        color: white;
+        z-index: 999;
+    }
+
+    .main-nav-div {
+        opacity: 0; 
+        visibility: hidden;
+        transition: transform 0.6s ease, opacity 0.6s ease;
+        transform: translateX(-100%);
+        z-index: 999;
+
+    }
+
+    .main-nav-div.show-menu {
+        width: 40vw;
+        height: 100vh;
+        padding: 30px;
+        padding-top: 190px;
+        position: fixed;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        opacity: 1; 
+        visibility: visible; 
+        background-color: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(10px);
+        transform: translateX(0);
+
+    }
+
+    
+
+    .icons-and-name {
+        display: flex;
+        gap: 15px; 
+        align-items: center;
+    }
+
+     .icons-text {
+        display: block;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+    } 
+
+    .icons-text.active-text {
+        color: #4e148c;
+    }
+    
+
+    
+    .icons-text.inactive-text {
+        color: white;
+    }
+    
+}

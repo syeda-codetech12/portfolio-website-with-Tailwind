@@ -1,14 +1,28 @@
 import React from 'react'
 
+
+
+import { SiHtml5,
+    SiCss3,
+    SiJavascript,
+    SiTypescript,
+    SiNextdotjs,
+    SiTailwindcss
+} from "react-icons/si";
+
+import '../../app/styles/about.css'
+
+
+
 const about = () => {
   return (
-    <div className='relative top-24 left 10'>
-        <div className='flex justify-center gap-2 text-6xl font-extrabold'>
-        <h1 className='text-purple-800'>ABOUT</h1>
-        <h1 className='text-gray-600'>ME.</h1>
+    <div className='main-about-container'>
+        <div className='about-text-container'>
+        <h1 className='purple-heading'>ABOUT</h1>
+        <h1 className='grey-heading'>ME.</h1>
         </div>
-        <div className='flex flex-row gap-10 w-[85%]'>
-            <div className='flex flex-row w-[90%] relative top-14 left-10 gap-16 text-[19px]'>
+        <div className='about-container'>
+            <div className='personal-about'  data-aos="fade-right">
                 <div>
                 <strong>Name:</strong>
                 <p>Syeda Barha</p>
@@ -33,27 +47,137 @@ const about = () => {
             </div>
 
 
-            <div className='flex flex-col gap-10 relative top-10' data-aos="zoom-in" data-aos-duration="2000" >
-            <div className='flex flex-row gap-16'>
-                <div className='w-[200px] h-[156px] border-2 border-purple-800 rounded-2xl'>
-                   <div className='p-6'><p className='text-purple-800 font-bold  text-4xl'>15+</p><span className='text-4xl font-thin'>-</span><span className='text-2xl uppercase font-light'>Projects Completed</span></div> 
+            <div className='professional-about' data-aos="zoom-in" data-aos-duration="2000" >
+            <div className='about-container1'>
+                <div className='box-container'>
+                   <div className='inner'><p className='value'>15+</p><span className='rule'>-</span><span className='info'>Projects Completed</span></div> 
                 </div>
-                <div className='w-[200px] h-[156px] border-2 border-purple-800 rounded-2xl'>
-                <div className='p-3 text-center'>  <p className='text-purple-800 font-bold  text-4xl p-3'>3900+</p><span className='text-4xl font-thin'>-</span><span className='text-2xl uppercase font-light'>Lines of Code</span> </div> 
+                <div className='box-container'>
+                <div className='inner'>  <p className='value'>3900+</p><span className='rule'>-</span><span className='info'>Lines of Code</span> </div> 
                 </div>
             </div> 
-            <div className='flex flex-row gap-16'>  
-                <div className='w-[200px] h-[156px] border-2 border-purple-800 rounded-2xl'>
-                <div className='p-6'> <p className='text-purple-800 font-bold  text-4xl'>7+</p><span className='text-4xl font-thin'>-</span><span className='text-2xl uppercase font-light'>Hours daily spent</span> </div> 
+            <div className='about-container2'>  
+                <div className='box-container'>
+                <div className='inner'> <p className='value'>7+</p><span className='rule'>-</span><span className='info'>Hours daily spent</span> </div> 
                 </div>
-                <div className='w-[200px] h-[156px] border-2 border-purple-800 rounded-2xl'>
-                <div className='p-7'> <p className='text-purple-800 font-bold  text-4xl'>5+</p><span className='text-4xl font-thin'>-</span><span className='text-[22px] uppercase font-light'>Milestones Achieved</span> </div> 
+                <div className='box-container'>
+                <div className='inner'> <p className='value'>5+</p><span className='rule'>-</span><span className='info'>Milestones Achieved</span> </div> 
                 </div>
                 </div> 
             </div>
         </div>
 
-        <button className='relative left-10 bottom-10 w-[155px] h-[45px] text-center border-2 border-purple-800 rounded-3xl text-[20px] font-bold text-gray-600 hover:bg-purple-700 hover:text-white transition-all duration-500 ease-out transform hover:scale-110 hover:shadow-2xl after:opacity-0 hover:after:opacity-100 hover:after:scale-125'>View Resume</button>
+        <a href="https://basic-static-resume-5gjxvyxf3-syeda-ayeshas-projects-5e56a146.vercel.app/" target='_blank'><button className='view-resume-btn'>View Resume</button></a>
+
+
+<div className='tech-skills-container'>
+        <div className='tech-container'  data-aos="fade-up">
+            <div>
+                <h1 className='tech-h'>My Focus is on building impactful digital experiences using 
+                </h1>
+                <h1 className='tech-heading'>modern technologies.</h1>
+            </div>
+            <div className='icons-container'>
+                <div className='icons-container1'>
+
+                  <div className='icons'> 
+                     <SiHtml5 size={100} className='html'/> 
+                     <h1>HTML</h1>
+                  </div>
+                    <div className='icons'>  
+                        <SiCss3 size={100} className='css'/> 
+                        <h1>CSS</h1>
+                         </div>
+                    <div className='icons'>  <SiJavascript size={100} className='javascript'/> 
+                    <h1>Javascript</h1>
+                    </div>
+                    <div className='icons'>  <SiTypescript size={100} className='typescript'/> 
+                    <h1>Typescript</h1>
+                    </div>
+
+                </div>
+                <div className='icons-container2' >
+                    <div className='icons'>  <SiNextdotjs   size={100} className='next j.s'/>
+                    <h1>Next.js</h1>
+                     </div>
+                    <div className='icons'>  <SiTailwindcss  size={100} className='tailwindcss'/>
+                    <h1>Tailwind CSS</h1>
+                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div className='skills-container'  data-aos="fade-up">
+            <div>
+                <h1 className='skills-h'>My Skills</h1>
+                <h1 className='skills-heading'>in leveraging modern tools to deliver impactful user experiences.</h1>
+            </div>
+            <div className='main-skills-container'>
+                <div className='main-skills'>
+                    <div>
+                        <div className='box'>
+                            <svg>
+                                <circle cx={80} cy={80} r={60} className='circle1'></circle>
+                            </svg>
+                                <span className='counter color1'>95%</span>
+                                <h2 className='expertized-tech'>HTML</h2>
+                        </div>
+                    </div>
+                    <div>
+                    <div>
+                        <div className='box'>
+                            <svg>
+                                <circle cx={80} cy={80} r={60} className='circle2'></circle>
+                            </svg>
+                                <span className='counter color1'>75%</span>
+                                <h2 className='expertized-tech'>CSS</h2>
+                        </div>
+                    </div>
+                    </div>
+                    <div>
+                    <div>
+                        <div className='box'>
+                            <svg>
+                                <circle cx={80} cy={80} r={60} className='circle3'></circle>
+                            </svg>
+                                <span className='counter color1'>65%</span>
+                                <h2 className='expertized-tech'>Javascript</h2>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div className='advanced-skills'>
+                        <div>
+                        <div className='box'>
+                            <svg>
+                                <circle cx={80} cy={80} r={60} className='circle4'></circle>
+                            </svg>
+                                <span className='counter color1'>70%</span>
+                                <h2 className='expertized-tech'>Typescript</h2>
+                        </div>
+                    </div>
+                    <div> 
+                        <div className='box'>
+                            <svg>
+                                <circle cx={80} cy={80} r={60} className='circle5'></circle>
+                            </svg>
+                                <span className='counter color1'>85%</span>
+                                <h2 className='expertized-tech'>Next J.S</h2>
+                        </div>
+                    </div>
+                    <div> 
+                        <div className='box'>
+                            <svg>
+                                <circle cx={80} cy={80} r={60} className='circle6'></circle>
+                            </svg>
+                                <span className='counter color1'>95%</span>
+                                <h2 className='expertized-tech'>Tailwind CSS</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
     </div>
   )
 }
